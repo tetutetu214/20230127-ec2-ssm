@@ -53,7 +53,7 @@ Parameters:
   
   UserName:
     Type: String
-    Default: "inamura"
+    Default: inamura
 
 # ------------------------------------------------------------#
 #  Resources
