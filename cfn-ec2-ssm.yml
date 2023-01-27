@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description:
-  EC2 accessible in SSM
+  Create NetWork EC2 SSM
 # ------------------------------------------------------------#
 #  Metadata
 # ------------------------------------------------------------#
@@ -10,18 +10,19 @@ Metadata:
       - Label:
           default: "VPC Configuration"
         Parameters:
-        - Name
-        - VPCCIDR
-        - PrivateSubnetCIDR
+          - Name
+          - VPCCIDR
+          - PrivateSubnetCIDR
       - Label:
           default: "EC2 Configuration"
         Parameters:
-        - AMIId
-        - InstanceType
-        - KeyPair
+          - AMIId
+          - InstanceType
+          - KeyPair
       - Label:
           default: "Tags"
-        - UserName
+        Parameters:
+          - UserName
 # ------------------------------------------------------------#
 #  InputParameters
 # ------------------------------------------------------------#
